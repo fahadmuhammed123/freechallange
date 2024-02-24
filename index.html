@@ -28,26 +28,26 @@
 <div class="container">
   <h2 class="mb-4">Coding Challenge Submission</h2>
   <!-- Form from formbold.com -->
-  <form id="codingChallengeForm" action="https://formbold.com/s/3V0OQ" method="POST">
+  <form action="https://formbold.com/s/3V0OQ" method="POST" id="codingChallengeForm">
     <div class="form-group">
       <label for="fullName">Full Name:</label>
-      <input type="text" class="form-control" id="fullName" name="fullName" required>
+      <input type="text" class="form-control" name="fullName" required>
     </div>
     <div class="form-group">
       <label for="email">Email Address:</label>
-      <input type="email" class="form-control" id="email" name="email" required>
+      <input type="email" class="form-control" name="email" required>
     </div>
     <div class="form-group">
       <label for="phone">Phone Number:</label>
-      <input type="tel" class="form-control" id="phone" name="phone">
+      <input type="tel" class="form-control" name="phone">
     </div>
     <div class="form-group">
       <label for="whatsappGroupName">WhatsApp Group Name:</label>
-      <input type="text" class="form-control" id="whatsappGroupName" name="whatsappGroupName" required>
+      <input type="text" class="form-control" name="whatsappGroupName" required>
     </div>
     <div class="form-group">
       <label for="challengeTitle">Challenge Title:</label>
-      <input type="text" class="form-control" id="challengeTitle" name="challengeTitle" required>
+      <input type="text" class="form-control" name="challengeTitle" required>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
@@ -55,7 +55,7 @@
 
 <script>
   // You can remove this script if you don't have additional form handling logic
-  document.getElementById("codingChallengeForm").addEventListener("submit", function(event) {
+  document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();
     // Code to handle form submission (e.g., validation, sending data to server) goes here
     // This is just a placeholder
