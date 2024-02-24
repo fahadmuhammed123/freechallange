@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Challenge Submission</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #343a40; /* dark blue */
+      color: #fff;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .btn-primary {
+      background-color: #dc3545; /* red */
+      border-color: #dc3545; /* red */
+    }
+    .btn-primary:hover {
+      background-color: #c82333; /* darker red */
+      border-color: #bd2130; /* darker red */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2 class="mb-4">Coding Challenge Submission</h2>
+  <!-- Form from formbold.com -->
+  <form id="codingChallengeForm" action="https://formbold.com/s/3V0OQ" method="POST">
+    <div class="form-group">
+      <label for="fullName">Full Name:</label>
+      <input type="text" class="form-control" id="fullName" name="fullName" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address:</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" class="form-control" id="phone" name="phone">
+    </div>
+    <div class="form-group">
+      <label for="whatsappGroupName">WhatsApp Group Name:</label>
+      <input type="text" class="form-control" id="whatsappGroupName" name="whatsappGroupName" required>
+    </div>
+    <div class="form-group">
+      <label for="challengeTitle">Challenge Title:</label>
+      <input type="text" class="form-control" id="challengeTitle" name="challengeTitle" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<script>
+  // You can remove this script if you don't have additional form handling logic
+  document.getElementById("codingChallengeForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    // Code to handle form submission (e.g., validation, sending data to server) goes here
+    // This is just a placeholder
+    alert("Form submitted successfully!");
+  });
+</script>
+
+</body>
+</html>
